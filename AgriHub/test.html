@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Test Camera</title>
+</head>
+<body>
+  <button onclick="testCamera()">📷 Open Camera / Upload</button>
+  <div id="preview"></div>
+
+  <script>
+    function testCamera() {
+      const input = document.createElement("input");
+      input.type = "file";
+      input.accept = "image/*";
+      input.capture = "environment"; 
+      input.onchange = (e) => {
+        const file = e.target.files[0];
+        if (file) {
+          document.getElementById("preview").innerText = "✅ File selected: " + file.name;
+        }
+      };
+      input.click();
+    }
+  </script>
+</body>
+</html>

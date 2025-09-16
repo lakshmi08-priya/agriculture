@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "@capacitor/android": "^7.4.3",
+    "@capacitor/cli": "^7.4.3",
+    "@capacitor/core": "^7.4.3",
+    "@expo/vector-icons": "^15.0.2",
+    "expo": "^54.0.6",
+    "expo-linear-gradient": "~15.0.7",
+    "react-native-animatable": "^1.4.0",
+    "react-native-linear-gradient": "^2.8.3"
+  },
+  "devDependencies": {
+    "@types/react": "~19.1.10",
+    "typescript": "~5.9.2"
+  }
+}
